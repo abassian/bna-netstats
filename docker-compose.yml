@@ -1,0 +1,9 @@
+version: '3'
+services:
+  bna-netstats:
+    build: .
+    restart: always
+    environment:
+      WS_SECRET: 'pingpong'
+    ports:
+      - '3005:3000'
